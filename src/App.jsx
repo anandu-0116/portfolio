@@ -133,7 +133,12 @@ function App() {
 
       <section id="resume" className="resume-section">
         <h2>Resume</h2>
-        <a href="/resume.pdf" className="resume-button" target="_blank" rel="noreferrer">
+        <a 
+        href={`${import.meta.env.BASE_URL}resume.pdf`} 
+        className="resume-button" 
+        target="_blank" 
+        rel="noreferrer"
+        >
           Download Resume
         </a>
       </section>
