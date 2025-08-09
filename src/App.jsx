@@ -53,7 +53,7 @@ function App() {
             tested across user-space programs.
           </p>
         </div>
-        <div className="project">
+        {/*<div className="project">
           <div className="project-header">
             <h3 className="project-title">DevOps Portfolio Site</h3>
             <a href="https://github.com/anandu-0116/portfolio" className="github-link" target="_blank" rel="noreferrer"> GitHub
@@ -62,7 +62,7 @@ function App() {
           <p>
             CI/CD pipeline based personal portfolio hosted on AWS with auto-deployment and monitoring setup.
           </p>
-        </div>
+        </div>*/}
         <div className="project">
           <div className="project-header">
             <h3 className="project-title">BTRFS</h3>
