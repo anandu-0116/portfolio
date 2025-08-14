@@ -19,7 +19,7 @@ function App() {
         <h1 className="intro">
           I’m <span className="highlight">Anandu</span>
         </h1>
-        <p className="subtitle">CS Grad Student · Systems & DevOps Enthusiast</p>
+        <p className="subtitle">CS Grad Student · Systems & Backend Developer Enthusiast</p>
         <div className="social-icons">
           <a href="mailto:ananduap19122001@gmail.com"><Mail /></a>
           <a href="https://github.com/anandu-0116" target="_blank" rel="noreferrer">
