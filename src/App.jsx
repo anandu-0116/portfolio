@@ -34,9 +34,13 @@ function App() {
       <section id="about" className="about-section">
         <h2>About Me</h2>
         <p>
-          I’m currently pursuing my Master’s in Computer Science at Stony Brook University. I’m passionate about
-          backend, systems, and DevOps, and I’ve built scalable services at Nykaa and Licious. I’m currently working on
-          a Linux Security Module called <strong>Safex</strong>.
+          I am a software engineer with a strong foundation in computer science and a dedication to building resilient, 
+          high-performance systems. I hold a Master’s degree in Computer Science from Stony Brook University and a 
+          Bachelor’s degree from BITS Pilani, Hyderabad Campus.
+          My technical expertise lies in backend engineering and distributed systems, with a specific focus on consensus 
+          protocols, fault tolerance, and kernel-level programming. From architecting scalable microservices at Nykaa and 
+          Licious to engineering distributed banking systems with Paxos and PBFT, I enjoy tackling complex infrastructure 
+          challenges. I am constantly exploring new technologies to create elegant, efficient, and scalable software solutions.
         </p>
       </section>
 
@@ -44,13 +48,13 @@ function App() {
         <h2>Projects</h2>
         <div className="project">
           <div className="project-header">
-            <h3 className="project-title">Safex</h3>
-            <a href="https://github.com/anandu-0116/safex-lsm" className="github-link" target="_blank" rel="noreferrer"> GitHub
+            <h3 className="project-title">Distributed Banking System with Paxos</h3>
+            <a href="https://github.com/anandu-0116/2PC-Paxos-Banking-Application" className="github-link" target="_blank" rel="noreferrer"> GitHub
             </a>
           </div>
           <p>
-            Custom Linux Security Module enforcing file access policies using VFS hooks. Implemented kernel hooks and
-            tested across user-space programs.
+            A sharded banking infrastructure utilizing Multi-Paxos for stable-leader consensus and Two-Phase Commit (2PC) 
+            to ensure atomicity across concurrent cross-shard transactions.
           </p>
         </div>
         {/*<div className="project">
@@ -65,22 +69,24 @@ function App() {
         </div>*/}
         <div className="project">
           <div className="project-header">
-            <h3 className="project-title">BTRFS</h3>
-            <a href="https://github.com/anandu-0116/BTRFS" className="github-link" target="_blank" rel="noreferrer"> GitHub
+            <h3 className="project-title">Byzantine Fault Tolerant Banking System</h3>
+            <a href="https://github.com/anandu-0116/PBFT-Banking-Application" className="github-link" target="_blank" rel="noreferrer"> GitHub
             </a>
           </div>
           <p>
-            This is a courselet developed as part of CSE 590 - Storage Systems course which simulates different btrfs features like compression, deduplication, snapshots, CoW and RAID.
+            A 7-node replicated banking application implementing the Linear PBFT consensus protocol to guarantee system 
+            safety, liveness, and resilience against Byzantine faults.
           </p>
         </div>
         <div className="project">
           <div className="project-header">
-            <h3 className="project-title">GestureBoard</h3>
-            <a href="https://github.com/anandu-0116/gesture-based-whiteboard-app" className="github-link" target="_blank" rel="noreferrer"> GitHub
+            <h3 className="project-title">Safex</h3>
+            <a href="https://github.com/anandu-0116/safex-lsm" className="github-link" target="_blank" rel="noreferrer"> GitHub
             </a>
           </div>
           <p>
-            Whiteboard app that uses webcam-based hand gestures for drawing, cursor movement, and erasing. Gesture control was implemented using MediaPipe landmarks.
+            A custom Linux Security Module (LSM) built from scratch to enforce read access control policies using kernel 
+            hooks and deferred workqueues.
           </p>
         </div>
       </section>
@@ -101,10 +107,12 @@ function App() {
           </div>
           <ul className="experience-list">
             <li>
-              Improved the catalog feed microservice using Java & Spring by removing dependencies on legacy monoliths, reducing go-live time by <strong>90%</strong> (8 hrs → 45 min).
+              Engineered the decoupling of the Catalog Feed from a legacy monolith into a standalone Microservice, 
+              reducing data synchronization latency by <strong>90%</strong> (8 hours to 45 mins) and ensuring real-time product availability.
             </li>
             <li>
-              Spearheaded the integration of a <strong>Virtual Try-On (VTO)</strong> feature by connecting frontend systems with Modiface’s 3rd-party APIs via a custom Python (Flask) backend service.
+              Developed the backend infrastructure for the <strong>Virtual Try-On (VTO)</strong> feature using Python (Flask) by 
+              integrating Modiface AR APIs, enhancing user engagement and interaction capabilities.
             </li>
           </ul>
         </div>
@@ -122,10 +130,12 @@ function App() {
           </div>
           <ul className="experience-list">
             <li>
-              Refactored legacy code to build a dedicated order microservice using Java & Spring, improving modularity and maintainability.
+              Spearheaded the decomposition of a monolithic architecture by extracting the Order Management module into 
+              an isolated <strong>Spring Boot</strong> microservice, improving fault tolerance and maintainability.
             </li>
             <li>
-              Migrated redundant monolith API calls to service-based implementations, boosting reliability and scalability.
+              Refactored legacy API pathways into optimized service-oriented architectures, reducing redundant calls and
+              enhancing system scalability.
             </li>
           </ul>
         </div>
